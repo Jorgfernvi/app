@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 import schemas
-from app.db import get_db_connection
+
 
 import mysql.connector
 
