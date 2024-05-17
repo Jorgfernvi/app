@@ -50,4 +50,3 @@ def transfer_funds(transfer_request: schemas.TransferRequest):
 
     return {"message": "Transfer successful"}
 
-# Add more endpoints as needed...

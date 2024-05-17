@@ -1,6 +1,5 @@
 from fastapi import APIRouter, HTTPException
 import schemas
-
 import mysql.connector
 
 host_name = "44.218.163.17"
@@ -37,4 +36,4 @@ def get_account_balance(account_id: int):
         raise HTTPException(status_code=404, detail="Account not found")
     return {"account_id": account_id, "balance": result['balance']}
 
-# Add more endpoints as needed...
+

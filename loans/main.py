@@ -1,6 +1,5 @@
 from fastapi import APIRouter, HTTPException
 import schemas
-
 import mysql.connector
 
 host_name = "44.218.163.17"

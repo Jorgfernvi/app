@@ -1,7 +1,5 @@
 from fastapi import APIRouter, HTTPException
 import schemas
-
-
 import mysql.connector
 
 host_name = "44.218.163.17"
@@ -14,7 +12,6 @@ def get_db_connection():
     return mysql.connector.connect(
         host=host_name, port=port_number, user=user_name, password=password_db, database=database_name
     )
-
 
 router = APIRouter()
 
@@ -42,4 +39,3 @@ def register_user(user: schemas.User):
     db.close()
     return {"message": "User registered successfully"}
 
-# Add more endpoints as needed...
